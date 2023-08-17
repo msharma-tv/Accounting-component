@@ -1,0 +1,40 @@
+<template>
+    <template if:true={bool}>
+        <lightning-card class="slds-p-around_x-large form">
+            <div class="heading">
+                <h1 class="heading1">Fill details to complete the survey</h1>
+                <h1 class="heading3"> "Fill Details"</h1>
+            </div>
+            <div class="input">
+                <lightning-input  label="Customer Name" value={name} required="true" class="name" onchange={handleNameInput}></lightning-input>
+                <lightning-input  type="date" label="Date Of Birth" required="true" value={dateOfBirth} onchange={handleDateInput} class="date"></lightning-input>
+                <h1 class="'address">Address</h1>
+                <lightning-input label="Street"  class="text"  onchange={handleAddressInput} value={street}></lightning-input>
+                <div class="slds-grid">
+                    <div class="slds-col slds-p-right_medium">
+                        <lightning-input label = "City" value={city} onchange={handleCityInput}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-p-left_medium">
+                        <lightning-input label = "postal-code" value={postalCode} onchange={handlePostalCodeInput}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-p-left_medium">
+                        <lightning-input label = "State" value={state} onchange={handleStateInput}></lightning-input>
+                    </div>
+                </div>
+                
+                <lightning-input label = "Country Name" value={country} onchange={handleCountryInput}></lightning-input>
+            </div>
+            <lightning-button variant="brand" label="Next" onclick={handleNextClick} class="slds-align_absolute-center"></lightning-button>
+        </lightning-card>
+    </template>
+    <template if:true={taskPage}>
+        <c-account-detail-page-two onsenddata={handleChildData} name={name}
+            date-of-birth={dateOfBirth}
+            city = {city}
+            street={street}
+            postal-code={postalCode}
+            country = {country}
+            state = {state}>
+        </c-account-detail-page-two>
+    </template>
+</template>

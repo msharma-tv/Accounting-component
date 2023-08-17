@@ -1,0 +1,59 @@
+
+.heading2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.heading3{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.previousButton{
+    text-align: center;
+    margin-left: 41%;
+    margin-top: 1%;    
+    padding-right: 1%;
+    font-size: larger;
+}
+
+.submitButton{
+    text-align: center;
+    margin-left: .5%;
+    font-size: larger;
+    margin-top: 1%;
+}
+
+.resetButton{
+    text-align: center;
+    margin-left: .5%;
+    margin-top: 1%;    
+    padding-right: 1%;
+    font-size: larger;
+}
+
+.slds-modal__container{
+    background-color: RGB(13, 157, 218);
+    height: 17%;
+    margin-top: 21%;
+}
+
+.slds-modal__header{
+    height: 3.5rem;
+    background-color: RGB(13, 157, 218);
+}
+
+.slds-modal__content{
+    padding: 5%;
+    font-size: larger;
+}
+
+.slds-modal__footer{
+    height: 4.5em;
+}
+
+.slds-m-p-around-medium{
+    padding-top: 2%;
+}

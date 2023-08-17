@@ -1,0 +1,38 @@
+<template>
+    <template if:true={bool}>
+        <lightning-card>
+            <div class="slds-p-around_medium">
+                <h1 class="heading2">Fill Details</h1>
+                <h1 class="heading3">"Fill your bank details"</h1>
+                <lightning-input label="Bank Name" value={nameOfBank} required="true" class="bankName" onchange={handleBankInput}></lightning-input>
+                <lightning-input label="Branch Name" value={branchName} onchange={handleBranchName} class="branchName" required="true"></lightning-input>
+                <lightning-input label="code" value={code} relevant="true" onchange={handleCodeInput}></lightning-input>
+                <div class="slds-m-p-around-medium">
+                    <lightning-button variant="brand" label="Previous" onclick={handlePreviousClick} class="previousButton"></lightning-button>
+                    <lightning-button variant="brand" label="Reset" onclick={handleResetClick} class="resetButton"></lightning-button>
+                    <lightning-button variant="brand" label="Submit" onclick={handleSubmitClick} class="submitButton"></lightning-button>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+    <template if:true={isModalOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open" id="modal">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Warning !</h2>
+                </header>
+                <div class="slds-modal__content" id="modal-content-id-1">
+                    <p><b>------Press "Ok" if you want to RESET values else press "CANCEL"------</b></p>
+                </div>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">CANCEL</button>
+                    <button class="slds-button slds-button_brand" onclick={handleOk} title="OK">OK</button>
+                </footer>
+            </div>
+        </section>
+    </template>
+    <template if:true={lastPage}>
+        <c-last-page></c-last-page>
+    </template>
+</template>

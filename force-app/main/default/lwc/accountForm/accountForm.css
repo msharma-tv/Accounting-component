@@ -1,0 +1,52 @@
+.slds-m-p-left_x-large{
+    padding: .5%;
+    margin-top: 5%;
+}
+
+.heading1 {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 12%;
+    font-size: 2rem;
+}
+
+.heading2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.proceedButton{
+    text-align: center;
+    margin-left: 45%;
+    padding-right: 1%;
+    font-size: larger;
+}
+.button{
+    margin-top: 1%;
+
+}
+
+.cancelButton{
+    text-align: center;
+    margin-left: 41%;
+    font-size: larger;
+}
+
+.mainContainer{
+    background-color: #2E4053 ;
+}
+
+.heading{
+    border:solid black; 
+}
+
+.frontPage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.img{
+    height:50%;
+    width:50%
+}

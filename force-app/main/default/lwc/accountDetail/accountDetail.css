@@ -1,0 +1,62 @@
+.heading1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.heading2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.heading3{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.slds-m-p-left_x-medium{
+    font-size: larger;
+}
+
+.address{
+    display: inline;
+}
+
+.slds-m-p-around-medium{
+    padding-top: 2%;
+}
+
+
+.form{
+    padding-bottom: 0px;
+    height: 10%;
+}
+.butn{
+    right: 32px;
+    font-size: larger;
+    
+}
+.bottom-margin{
+    margin-bottom: 73px;
+}
+
+.input{
+    padding:1em;
+    min-height:auto;
+}
+
+.slds-float_right{
+    float: right;
+}
+
+.slds-align_absolute-center{
+    text-align: center;
+    margin-left: 90%;
+    font-size: larger;
+}
+
+.address{
+    font-weight: 300;
+}

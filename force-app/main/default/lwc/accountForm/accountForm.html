@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-p-around_small mainContainer">
+        <lightning-card if:true={mainHeading}>
+            <div class="frontPage">
+                <div class="img"><img src={logo} alt="Company logo" class="logoImage"></div>
+                <div class="heading1"><h1>!!!...WELCOME...!!!</h1>
+                    <h2 class="heading2">"This page is basically to take the survey of the banks and their customers"</h2>
+            
+                </div>
+            </div>
+            <div class="button">
+                <lightning-button variant="brand" label="Proceed" onclick={handleProceedClick} class="proceedButton"></lightning-button>
+            </div>
+        </lightning-card>
+        <template if:true={accountDetailPage}>
+            <c-account-detail></c-account-detail>
+        </template>
+    </div>
+</template>
